@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Function to load the pre-trained model and cache it for optimized performance
 def load_model():
-    relative_path = os.path.join(os.path.dirname(__file__), 'model', 'model.h5')
+    relative_path = os.path.join(os.path.dirname(__file__), 'model.h5')
     model = tf.keras.models.load_model(relative_path)
     return model
 
